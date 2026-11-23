@@ -95,7 +95,7 @@ void FFurIndexBuffer::InitRHI(FRHICommandListBase& RHICmdList)
 	RHICmdList.UnlockBuffer(IndexBufferRHI);
 
 #if !WITH_EDITORONLY_DATA
-	Indices.SetNum(0, true);
+	Indices.Empty();
 #endif // WITH_EDITORONLY_DATA
 }
 
