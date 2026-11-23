@@ -683,9 +683,9 @@ inline void FFurStaticData::BuildFur(const FStaticMeshLODResources& LodRenderDat
 	});
 
 #if !WITH_EDITORONLY_DATA
-	Normals.SetNum(0, true);
-	SplineMap.SetNum(0, true);
-	VertexRemap.SetNum(0, true);
+	Normals.Empty();
+	SplineMap.Empty();
+	VertexRemap.Empty();
 #endif // WITH_EDITORONLY_DATA
 }
 
